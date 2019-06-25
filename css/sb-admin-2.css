@@ -11643,8 +11643,8 @@ a:focus {
   }
 }
 
-.bg-login-image {
-  background: url("");
+.login-image {
+  background: url("/img/bnpb.jpg") !important;
   background-position: center;
   background-size: cover;
 }

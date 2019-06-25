@@ -1,0 +1,12 @@
+.backg-login{
+    background: url("/img/bnpb.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.logo-bnpb{
+    background-image: url("https://1.bp.blogspot.com/-vGwfUEcu2kk/UPLGcZJ4SSI/AAAAAAAALYw/bmllfIVBuQs/s1600/LOGO+BADAN+NASIONAL+PENANGGULANGAN+BENCANA.png");
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+}

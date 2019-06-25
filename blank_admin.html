@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Blank</title>
+  <title>Admin Blank</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,101 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/costum.css">
 </head>
 
 <body id="page-top">
 
   <!-- Page Wrapper -->
   <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <br>
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon pl-3 pr-3">
+               <img src="https://1.bp.blogspot.com/-vGwfUEcu2kk/UPLGcZJ4SSI/AAAAAAAALYw/bmllfIVBuQs/s1600/LOGO+BADAN+NASIONAL+PENANGGULANGAN+BENCANA.png" style="width: 80px; height: 80px;">
+          </div>
+        <div class="sidebar-brand-text pr-3">Sistem Distribusi Logistik</div>
+      </a>
+      <br>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fa fa-list-alt"></i>
+          <span>Input Data</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Jenis Input:</h6>
+            <a class="collapse-item" href="login.html">Masuk</a>
+            <a class="collapse-item" href="register.html">keluar</a>
+        </div>
+      </li>
+
+       <!-- Nav Item Laporan -->
+       <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fa fa-industry"></i>
+            <span>Gudang</span></a>
+      </li>
+
+         <!-- Nav Item Laporan -->
+         <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+              <i class="fa fa-th-list"></i>
+              <span>Laporan</span></a>
+          </li>
+    
+       <!-- Nav Item - Utilities Collapse Menu -->
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+          <i class="fa fa-history"></i>
+          <span>Riwayat Barang</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="utilities-color.html">Masuk</a>
+            <a class="collapse-item" href="utilities-border.html">Keluar</a>
+          </div>
+        </div>
+      </li>
+
+      
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Charts</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -31,7 +119,12 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
@@ -90,6 +183,17 @@
                     $290.29 has been deposited into your account!
                   </div>
                 </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
             </li>
@@ -116,7 +220,36 @@
                     <div class="small text-gray-500">Emily Fowler · 58m</div>
                   </div>
                 </a>
-                
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
               </div>
             </li>
@@ -126,8 +259,8 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-white small">Ihya Fathurr</span>
-                <img class="img-profile rounded-circle" src="https://instagram.fcgk8-2.fna.fbcdn.net/vp/1933052f97cf7847ddceee9fe08c28fd/5D88E11B/t51.2885-15/sh0.08/e35/s640x640/43653367_543410486124558_3114722360144129502_n.jpg?_nc_ht=instagram.fcgk8-2.fna.fbcdn.net&_nc_cat=106">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -150,54 +283,12 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            <div class="row pt-5 pb-5 ml-3 mr-3 justify-content-center">
-                <table class="table table-bordered table-hover" style="background-color: white;">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Nama Laporan</th>
-                        <th scope="col">Tanggal</th>
-                        <th scope="col">Dusun</th>
-                        <th scope="col">Desa</th>
-                        <th scope="col">Kecamatan</th>
-                        <th scope="col">Keterangan</th>
-                        <th scope="col">Korban</th>
-                        <th scope="col">Media</th>
-                        <th scope="col">Logistik</th>
-                        <th scope="col">Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td scope="row">Gempa Bantul</td>
-                        <td scope="row">11 Desember 2018</td>
-                        <td scope="row">X</td>
-                        <td scope="row">X</td>
-                        <td scope="row">X</td>
-                        <td scope="row">satu rumah warga roboh</td>
-                        <td scope="row">-</td>
-                        <td scope="row">2018121112.jpg</td>
-                        <td scope="row">20kg beras, 5 tenda</td>
-                        <td scope="row">Diproses</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">1</th>
-                          <td scope="row">Gempa Bantul</td>
-                          <td scope="row">11 Desember 2018</td>
-                          <td scope="row">X</td>
-                          <td scope="row">X</td>
-                          <td scope="row">X</td>
-                          <td scope="row">satu rumah warga roboh</td>
-                          <td scope="row">-</td>
-                          <td scope="row">2018121112.jpg</td>
-                          <td scope="row">20kg beras, 5 tenda</td>
-                          <td scope="row">Diproses</td>
-                        </tr>
-                    </tbody>
-                  </table>
-            </div>
-        </div>
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+          </div>
         <!-- /.container-fluid -->
 
       </div>
@@ -207,7 +298,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; STARTBUG 2019</span>
+            <span>Copyright &copy; Your Website 2019</span>
           </div>
         </div>
       </footer>
@@ -252,6 +343,13 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
 
