@@ -95,26 +95,6 @@
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
-
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -142,7 +122,41 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-info">Laporan Anda</h6>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-bordered table-striped" id="dataTable" width="100%" cellspacing="0">
+                      <thead class="text-center">
+                        <tr>
+                          <th class="text-center">No</th>
+                          <th>Judul</th>
+                          <th>Tanggal</th>
+                          <th>Keterangan</th>
+                          <th>Jumlah Korban</th>
+                          <th>Gambar</th>
+                          <th>Desa</th>
+                          <th>Kecamatan</th>
+                        </tr>
+                      </thead>  
+                      <tbody>
+                        <tr>
+                          <td class="text-center">1</td>
+                          <td>Longsor</td>
+                          <td>2011/05/03</td>
+                          <td>London</td>
+                          <td>38</td>
+                          <td>dqoiasf.jpg</td>
+                          <td>$163,500</td>
+                          <td>DImana</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
          
 
         </div>
@@ -155,7 +169,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-           
+          
           </div>
         </div>
       </footer>
@@ -195,6 +209,11 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+   <!-- DataTable Script -->
+   <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+   <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+   <script src="js/demo/datatables-demo.js"></script>
+ 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
